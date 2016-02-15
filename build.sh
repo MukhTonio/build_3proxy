@@ -1,4 +1,4 @@
-yum -y install mc gcc nano openssl-devel
+yum -y install mc gcc nano openssl-devel wget
 wget https://github.com/z3APA3A/3proxy/archive/3proxy-0.8.3.tar.gz
 
 tar -xvzf 3proxy-0.8.3.tar.gz
@@ -7,7 +7,7 @@ ln -s /usr/lib64/libssl.so.10 /usr/lib/libssl.so
 
 cd ./3proxy-3proxy-0.8.3/
 
-nano /etc/proxy.h // #define ANONYMOUS 1
+nano /src/proxy.h // #define ANONYMOUS 1
 
 make -f Makefile.Linux
 
